@@ -1,7 +1,16 @@
 {
   "name": "rest",
   "version": "1.0.0",
+  "description": "Curso de REST API para tutorial no Github.",
   "main": "index.js",
-  "author": "CarvalhoLC <carvalho.luisc@gmail.com>",
-  "license": "MIT"
+  "keywords": [
+    "node",
+    "tutorial",
+    "github"
+  ],
+  "author": "Luis Carlos de Carvalho",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
