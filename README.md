@@ -14,16 +14,22 @@ yarn|v1.22.4|
 
 ### Lista de Pacotes Utilizados no Projeto
 
-Pacotes|Descrição
----|---
-express|
+Pacotes|Dependência|Descrição
+---|---|---
+express||Framework web para tratar requisições 'http' em aplicações 'node'.
+nodemon|Dev|Reinicia automaticamente o servidor do 'node' toda vez que tem alteração em um arquivo '.js'.
+morgan||
+
 
 
 ### Lista de Comandos Utilizados no Projeto
 
 Comando|Descrição
 ---|---
-yarn init|
-yarn add express|
-node server.js|
+yarn init|Inicia um projeto **nodeJS** criando um arquivo de configuração chamado `package.json`.
+yarn add `pacote`|Instala um determinado `pacote` na dependência do projeto.
+yarn add `pacote -D`|Instala um determinado 'pacote' na dependência (**_Desenvolvimento_**) do projeto.
+yarn remove `pacote`|Remove o pacote da dependência do projeto.
+node server.js|Inicializa o servidor do **nodeJS**. Para para-lo digitar `Ctrl + C`.
+yarn start|Executa um script chamado `start` criado no arquivo `package.json` para ser inicializado.
 
