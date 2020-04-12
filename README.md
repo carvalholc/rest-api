@@ -18,8 +18,9 @@ Pacotes|Dependência|Descrição
 ---|---|---
 express||Framework web para tratar requisições 'http' em aplicações 'node'.
 nodemon|Dev|Reinicia automaticamente o servidor do 'node' toda vez que tem alteração em um arquivo '.js'.
-morgan||Framework de log para requisições `http`. É um **Callback** que monitora todas as requisições da aplicação. 
-
+morgan||Framework de log para requisições `http`. É um **Callback** que monitora todas as requisições da aplicação.
+body-parser||
+cors|| 
 
 
 ### Lista de Comandos Utilizados no Projeto

@@ -11,8 +11,14 @@ router.get('/', (req, res, next) => {
 
 // Insere um pedido.
 router.post('/', (req, res, next) => {
+    const pedido = {
+        id_produto: req.body.id_produto,
+        quantidade: req.body.quantidade
+    };
+
     res.status(201).send({
-        mensagem: 'Pedido Incluido.'
+        mensagem: 'Pedido Incluido.',
+        pedidoCriado: pedido
     });
 });
 
