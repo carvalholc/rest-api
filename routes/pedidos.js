@@ -2,43 +2,44 @@ const express = require('express');
 
 const router = express.Router();
 
-// Retorna os dados de todos os produtos.
+// Retorna os dados de todos os pedidos.
 router.get('/', (req, res, next) => {
     res.status(200).send({
-        mensagem: 'Retorna todos os produtos.'
+        mensagem: 'Retorna todos os pedidos.'
     });
 });
 
-// Insere um produto.
+// Insere um pedido.
 router.post('/', (req, res, next) => {
     res.status(201).send({
-        mensagem: 'Produto Incluido.'
+        mensagem: 'Pedido Incluido.'
     });
 });
 
-// Retorna os dados de um produto.
-router.get('/:id_produto', (req, res, next) => {
-    const id = req.params.id_produto;
+// Retorna os dados de um pedido.
+router.get('/:id_pedido', (req, res, next) => {
+    const id = req.params.id_pedido;
 
     res.status(200).send({
-        mensagem: `Retorna um produto. [ ${id} ]`,
+        mensagem: `Retorna um pedido. [ ${id} ]`,
         id: id
     });
 });
 
-// Altera um produto.
+// Altera um pedido.
+/* Não iremos alterar um pedido.
 router.patch('/', (req, res, next) => {
     res.status(201).send({
-        mensagem: 'Produto Alterado.'
+        mensagem: 'Pedido Alterado.'
     });
 });
+*/
 
-// Exclui um produto.
+// Exclui um pedido.
 router.delete('/', (req, res, next) => {
     res.status(201).send({
-        mensagem: 'Produto Excluido.'
+        mensagem: 'Pedido Excluido.'
     });
 });
-
 
 module.exports = router;
