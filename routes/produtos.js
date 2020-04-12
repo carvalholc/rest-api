@@ -14,4 +14,13 @@ router.post('/', (req, res, next) => {
     });
 });
 
+router.get('/:id_produto', (req, res, next) => {
+    const id = req.params.id_produto;
+
+    res.status(200).send({
+        mensagem: `Usando o GET do produto ${id}.`,
+        id: id
+    });
+});
+
 module.exports = router;
